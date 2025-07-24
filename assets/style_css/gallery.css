@@ -1,0 +1,206 @@
+.gallery_image {
+    padding: 4em 4em;
+    position: relative;
+
+}
+.gallery_image h1 {
+    font-size: 36px;
+    padding: 0 0 2em;
+}
+.item__product {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.item__product::-webkit-scrollbar {
+    display: none;
+}
+
+.title__image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.title__image h6 a {
+    font-size: 1rem;
+    line-height: 3;
+    color: #000;
+    transition: 0.5s;
+}
+
+.title__image h6 a:hover {
+    color: #d4b446;
+}
+
+.title__image span {
+    color: #666;
+    font-size: 18px;
+}
+
+.item__product .bi-arrow-left {
+    position: absolute;
+    left: 3%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+ .item__product .bi-arrow-right {
+    position: absolute;
+    right: 3%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.item__product .gallery {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+}
+
+.item__product .card {
+    min-width: 250px;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.item__product .card .image__one {
+    position: relative;
+    width: 90%;
+}
+
+.item__product .card:nth-child(1) .image__one::after {
+    position: absolute;
+    content: "out of stock";
+    right: 15px;
+    top: 15px;
+    background: #000;
+    color: #fff;
+    padding: 4px 15px;
+}
+
+.item__product .card:nth-child(4) .image__one::after {
+    position: absolute;
+    content: "-14%";
+    right: 15px;
+    top: 15px;
+    background: #f14000;
+    color: #fff;
+    padding: 4px 15px;
+}
+
+.item__product .card .image__one img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.item__product .card .image__one .hover__icons {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    height: 98.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    gap: 1.5em;
+}
+
+.item__product .card .image__one:hover .hover__icons {
+    opacity: 1;
+}
+
+.item__product .card .image__one .hover__icons a {
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.item__product .card .image__one .hover__icons button {
+    width: 45px;
+    height: 45px;
+    line-height: 48px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+
+}
+.item__product .card .image__one .hover__icons a:nth-child(1) {
+    transition: all 0.1s;
+    transform: translateY(1em);
+}
+
+.item__product .card .image__one .hover__icons button:nth-child(2) {
+    transition: all 0.3s;
+    transform: translateY(1.5em);
+}
+
+.item__product .card .image__one .hover__icons a:nth-child(3) {
+    transition: all 0.4s;
+    transform: translateY(1.6em);
+    cursor: pointer;
+    
+}
+
+.item__product .card .image__one .hover__icons:hover a:nth-child(1) {
+    transition-timing-function: ease-in;
+    transform: translateY(0em);
+    opacity: 1;
+}
+
+.item__product .card .image__one .hover__icons:hover button:nth-child(2) {
+    transition-timing-function: ease-in;
+    transform: translateY(0em);
+    opacity: 1;
+}
+
+.item__product .card .image__one .hover__icons:hover a:nth-child(3) {
+    transition-timing-function: ease-in;
+    transform: translateY(0em);
+    opacity: 1;
+}
+
+.item__product .card .image__one .hover__icons a i {
+    font-size: 18px;
+    color: #000;
+}
+
+ .item__product .card .image__one .hover__icons a:hover i {
+    color: #d4b446;
+}
+.item__product .card .image__one .hover__icons button i {
+    font-size: 18px;
+    color: #000;
+}
+
+ .item__product .card .image__one .hover__icons button:hover i {
+    color: #d4b446;
+}
+@media (max-width: 1024px) {
+    .gallery_image {
+    padding: 4em 10px;
+
+}
+    
+}

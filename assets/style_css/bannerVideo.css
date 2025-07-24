@@ -1,0 +1,58 @@
+.banner-video-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+        transition: all 0.3s ease;
+}
+.banner-video-box:hover .bk_color {
+    display: block;
+}
+.bk_color{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    
+}
+
+.banner-video-box img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.video-icon:hover {
+    background-color: #d4b446;
+}
+
+.video-icon i {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.video-icon:hover i {
+    color: #fff;
+}

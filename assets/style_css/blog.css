@@ -1,0 +1,118 @@
+.parent__blog {
+    padding: 8em 4em 2em;
+    width: 100%;
+}
+
+.parent__blog h1 {
+    font-size: 36px;
+}
+
+.parent__blog #btn {
+    text-align: end;
+}
+
+.parent__blog .container_blog {
+    padding-top: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parent__blog .container_blog .item {
+    width: 360px;
+}
+
+.parent__blog .container_blog .item .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.parent__blog .container_blog .item .image a {
+    position: absolute;
+    bottom: 0;
+    padding: 14px 16px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    right: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.parent__blog .container_blog .item:hover a {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.parent__blog .container_blog .item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.parent__blog .container_blog .item h3 {
+    padding: 1em 0 1.8em;
+    font-size: 20px;
+    position: relative;
+}
+
+.parent__blog .container_blog .item h3::after {
+    position: absolute;
+    content: "";
+    bottom: 0.7em;
+    left: 0;
+    width: 70px;
+    height: 1.5px;
+    background-color: rgba(180, 180, 180, 0.7);
+}
+
+.parent__blog .container_blog .item h3::before {
+    position: absolute;
+    content: "";
+    bottom: 0.7em;
+    left: 0;
+    width: 0px;
+    height: 1.5px;
+    z-index: 1;
+    background-color: #d4b446;
+    transition: all 0.5s;
+}
+
+.parent__blog .container_blog .item:hover h3::before {
+    width: 70px;
+}
+
+.parent__blog .container_blog .item p b {
+    color: #dbd7da;
+}
+
+.parent__blog .container_blog .item p a {
+    color: #000;
+    transition: all 0.2s;
+}
+
+.parent__blog .container_blog .item p a:hover {
+    color: #d4b446;
+}
+
+@media (max-width: 1024px) {
+    .parent__blog {
+        padding: 3em 1em;
+    }
+
+    .parent__blog h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .parent__blog #btn {
+        text-align: start;
+        padding-top: 1em;
+    }
+
+    .parent__blog .container_blog {
+        padding: 2em 0;
+    }
+}

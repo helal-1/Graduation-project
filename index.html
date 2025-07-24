@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+    <!-- link icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="website icon" type="png__icon" href="./assets/images/favicon.ico">
+<!-- link css  -->
+<link rel="stylesheet" href="./assets/style_css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flipdown@0.3.2/dist/flipdown.min.js"></script>
+
+
+    <title>Helendo</title>
+</head>
+
+<body>
+ <div class="container_login">
+    <div class="login-box" id="login-box">
+    
+        <div class="login-header">
+            <span>Login</span>
+            <i data-lucide="x" id="close-login" class="icon close-icon"></i>
+        </div>
+    
+        <input type="text" id="username" placeholder="user name" style="margin-top: 2em;">
+        <small id="user-error" class="error-message"></small>
+    
+        <div class="password-container">
+            <input type="password" id="password" placeholder="password" >
+            <i class="bi bi-eye eye-icon" id="toggle-password"></i>
+        </div>
+        <small id="pass-error" class="error-message"></small>
+    
+        <button onclick="login()">Login</button>
+    </div>
+ </div>
+<header class="header">
+    <div class="logo"><img src="./assets/images/logo (1).svg" alt=""></div>
+
+<nav class="nav-links">
+    <div class="dropdown">
+        <a href="#" class="link_home">Home</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Home 1</a></li>
+            <li><a href="#">Home 2</a></li>
+            <li><a href="#">Home 3</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Shop</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Shop Men</a></li>
+            <li><a href="#">Shop Women</a></li>
+            <li><a href="#">Shop Accessories</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Products</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Special Offers</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">Blog</a>
+        <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Trends</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <div class="icons">
+        <i data-lucide="user" id="login-icon" class="icon"></i>
+    <div class="cart">
+        <i data-lucide="shopping-cart" class="icon"></i>
+        <span class="cart-count">0</span>
+    
+        <div class="cart-dropdown">
+            <h4>🛒 shopping cart</h4>
+            <ul class="cartItems"></ul>
+            <p class="empty-cart">The cart is now empty</p>
+            <div class="cart-footer">
+                <div class="total-price">Total: 0 </div>
+                <button class="checkout-btn" id="checkout">Payment</button>
+            </div>
+        </div>
+    </div>
+
+
+        <i class="bi bi-list"></i>
+    </div>
+
+
+ 
+    
+    <div class="notification" id="notification">
+        <i data-lucide="check-circle"></i>
+        <span>You are logged in</span>
+    </div>
+
+</header>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="bk-img1">
+                <div class="title__page activeOne">
+                    <span class="left-line">
+                        <h5>
+                            CHAIR <br> COLLECTION <br> 2022
+                        </h5>
+
+                    </span>
+                    <h1>Vase Decorated <br> With Pine</h1>
+                    <a href="#" class="text-btn-normal font-weight--reguler font-lg-p">Discover Collection <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="bk-img2">
+                <div class="title__page activeOne">
+                    <span class="left-line">
+                        <h5>
+                            CHAIR <br> COLLECTION <br> 2022
+                        </h5>
+
+                    </span>
+                    <h1>Wooden Kitchen <br> Utensils</h1>
+                    <a href="#" class="text-btn-normal font-weight--reguler font-lg-p">Discover Collection <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="swiper-slide" id="bk-img3">
+                <div class="title__page activeOne">
+                    <span class="left-line">
+                        <h5>
+                            CHAIR <br> COLLECTION <br> 2022
+                        </h5>
+
+                    </span>
+                    <h1>Vase Decorated <br> With Pine</h1>
+                    <a href="#" class="text-btn-normal font-weight--reguler font-lg-p">Discover Collection <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="counter_slider">
+            <span id="current">1</span> / <span id="total">3</span>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="cards">
+        <div class="item__1" data-aos="fade-up" data-aos-duration="10000">
+            <div class="banner-title">
+                <h3><a href="#3">Table collection </a></h3>
+                <h6>Furniture Helen</h6>
+                <div class="button-box mt-40">
+                    <a href="#" class="text-btn-normal">Discover now <i class="bi bi-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="15000" class="item__2">
+            <div class="banner-title">
+                <h3><a href="#">Table collection </a></h3>
+                <h6>Furniture Helen</h6>
+                <div class="button-box mt-40">
+                    <a href="#" class="text-btn-normal">Discover now <i class="bi bi-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="gallery_image">
+                <h1>New products</h1>
+        <div class="popup">
+            <div class="popup-container">
+        
+            </div>
+        </div>
+        <div class="item__product" id="slider">
+            <i class="bi bi-arrow-left" id="left"></i>
+            <div class="gallery">
+            </div>
+            <i class="bi bi-arrow-right" id="right"></i>
+        
+        </div>
+    </section>
+    <div class="about-us-content_6 text-center">
+        <h2>Helendo Store</h2>
+        <p>When you start with a portrait and search for a pure form, a clear volume, through successive eliminations,
+            you arrive inevitably at the egg. Likewise, starting with the egg and following the same process in reverse,
+            one finishes with the portrait.
+        </p>
+    </div>
+<div class="banner-video-box">
+    <div class="bk_color"></div>
+    <img src="assets/images/video-banner2.webp" alt="Video Banner">
+    <div class="video-icon">
+        <a href="https://www.youtube.com/watch?v=fkoEj95puX0" class="popup-youtube">
+            <i class="bi bi-play-fill"></i> <!-- يمكنك استخدام fa-play بدلاً منها -->
+        </a>
+    </div>
+</div>
+
+<section class="parent__shop">
+    <h1>Best selling</h1>
+    <div class="container">
+        <div class="links" id="category" data-aos="fade-up" data-aos-duration="1000">
+        </div>
+        <div class="cardProducts" id="container_products">
+
+
+
+        </div>
+    </div>
+
+</section>
+    <div class="Collection">
+        <h1 data-aos="fade-up" data-aos-duration="4000"><span>50% OFF</span>Interior Collection</h1>
+        <p data-aos="fade-up" data-aos-duration="2000">Free shipping over $125 for international orders</p>
+        <div id="flipdown" class="flipdown">
+        
+            
+        </div>
+
+        <a data-aos="fade-up" data-aos-duration="1000" href="#"
+            class="text-btn-normal font-weight--reguler font-lg-p">Discover Collection <i class="bi bi-arrow-right"></i></a>
+    </div>
+        <section class="parent__blog">
+            <h1>Latest from our blog</h1>
+            <div id="btn">
+                <a data-aos="fade-up" data-aos-duration="1000" href="#"
+                    class="text-btn-normal font-weight--reguler font-lg-p">Discover
+                    Collection <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="container_blog">
+                <div class="item" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="image">
+                        <img src="./assets/images/8-570x370.webp" alt="">
+                        <a href="#">read more +</a>
+                    </div>
+                    <h3>Interior design is the art, the interior designer is the artist.</h3>
+                    <p>October 15, 2022 <b>/</b> <a href="#">Hastheme</a> <b>/ in</b> <a href="#">Chair</a></p>
+                </div>
+                <div class="item" data-aos="fade-down" data-aos-duration="2500">
+                    <div class="image">
+                        <img src="./assets/images/9-570x370.webp" alt="">
+                        <a href="#">read more +</a>
+                    </div>
+                    <h3>Decorate your home with the most modern furnishings.</h3>
+                    <p>October 15, 2022 <b>/</b> <a href="#">Hastheme</a> <b>/ in</b> <a href="#">Chair</a></p>
+                </div>
+                <div class="item" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="image">
+                        <img src="./assets/images/10-570x370.webp" alt="">
+                        <a href="#">read more +</a>
+                    </div>
+                    <h3>Spatialize with the decorations of the Helendo store.</h3>
+                    <p>October 15, 2022 <b>/</b> <a href="#">Hastheme</a> <b>/ in</b> <a href="#">Chair</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div
+                style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; gap: 20px;">
+        
+                <div class="div_1">
+                    <h3 style="font-size: 30px;">Helendo</h3>
+                    <p><i class="bi bi-geo-alt-fill"></i> Chicago, USA 2018</p>
+                    <p><i class="bi bi-telephone-fill"></i> +846677028028</p>
+                    <div class="links__footer" style="display: flex; gap: 2em;">
+                        <i class="fa-brands fa-facebook-f" style="cursor: pointer;"></i>
+                        <i class="fa-brands fa-twitter" style="cursor: pointer;"></i>
+                        <i class="fa-brands fa-instagram" style="cursor: pointer;"></i>
+                    </div>
+                </div>
+        
+                <div class="div_2">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none; padding: 1em 0; display: flex;
+                            flex-direction: column; gap: 1em;">
+                        <li><a href="#" style="color: #000; text-decoration: none;">About Us</a></li>
+                        <li><a href="#" style="color: #000; text-decoration: none;">What We Do</a></li>
+                        <li><a href="#" style="color: #000; text-decoration: none;">FAQ Page</a></li>
+                        <li><a href="#" style="color: #000; text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer_inp">
+                    <h3>Newsletter</h3>
+                    <input type="email" placeholder="Your email Address"
+                        style="padding: 10px; width: 300px; margin-top: 2em; border: none; background-color: transparent; outline: none;">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+        
+            </div>
+            <span style="line-height: 2;">© 2023 Helendo. All Rights Reserved. by Mohamed Helal</span>
+        </footer>
+    <!-- link swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- link java script  -->
+<!-- jQuery أولاً -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Magnific Popup ثانيًا -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!-- ثم كود التهيئة -->
+<script>
+    $(document).ready(function () {
+        $(".popup-youtube").magnificPopup({
+            type: "iframe",
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: "youtube.com/",
+                        id: "v=",
+                        src: "https://www.youtube.com/embed/%id%?autoplay=1",
+                    },
+                },
+            },
+        });
+    });
+</script>
+
+    <script src="./assets/java_script/slider.js"></script>
+    <script src="./assets/java_script/carts.js"></script>
+    <script src="./assets/java_script/gallery.js"></script>
+    <script src="./assets/java_script/login.js"></script>
+    <script src="./assets/java_script/header.js"></script>
+    <script src="./assets/java_script/products.js"></script>
+    <script src="./assets/java_script/countDown.js"></script>
+    <script src="./assets/java_script/main.js"></script>
+   
+
+</body>
+
+</html>

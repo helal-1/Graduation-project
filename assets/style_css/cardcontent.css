@@ -1,0 +1,59 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1em auto;
+    gap: 2em;
+    border: 25px solid #ffffff;
+    background-color: #ffffff;
+    width: 90%;
+    height: 320px;
+}
+
+.cards .item__1 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-image: url(../images/bn-hf-1-570x340.webp);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 3em 2em;
+}
+
+.banner-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-title h3 {
+    padding-bottom: 0.4em;
+    font-size: 28px;
+    color: #000;
+}
+
+.banner-title h6 {
+    padding-bottom: 3em;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.banner-title a {
+    color: #000;
+    transition: 0.5s;
+}
+
+.banner-title a:hover {
+    color: #d4b446;
+}
+
+.cards .item__2 {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 3em 2em;
+    background-image: url(../images/bn-hf-2-570x340.webp);
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}

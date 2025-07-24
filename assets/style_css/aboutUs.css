@@ -1,0 +1,13 @@
+.about-us-content_6 h2 {
+    font-size: 60px;
+    font-family: "Mr De Haviland", cursive;
+    margin-bottom: 20px;
+}
+  .about-us-content_6 p {
+    max-width: 780px;
+    margin: auto;
+    text-align: center;
+}
+.about-us-content_6{
+    padding: 2em 0;
+}
