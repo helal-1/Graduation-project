@@ -59,19 +59,19 @@
 }
 
 #bk-img1 {
-    background-image: url(assets/images/home-para-1.webp);
+    background-image: url(../images/home-para-1.webp);
     background-position: center;
     background-size: cover;
 }
 
 #bk-img2 {
-    background-image: url(assets/images/home-para-2.webp);
+    background-image: url(../images/home-para-2.webp);
     background-position: center;
     background-size: cover;
 }
 
 #bk-img3 {
-    background-image: url(assets/images/home-para-3.webp);
+    background-image: url(../images/home-para-3.webp);
     background-position: center;
     background-size: cover;
 }
