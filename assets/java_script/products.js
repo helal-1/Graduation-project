@@ -55,7 +55,7 @@ productsCard = [
     },
     {
         id: 7,
-        category: "Chair",
+        category: [ "Decoration", "Table"],
         title: "Decoration wood",
         price: "$55.00",
         image: "assets/images/1_7-300x300.webp",
@@ -79,7 +79,7 @@ productsCard = [
     },
     {
         id: 10,
-        category: "Decoration",
+        category: ["Chair", "Decoration"],
         title: "Gray nancy chair",
         price: "$40.00",
         image: "assets/images/10-300x300.webp",
@@ -87,7 +87,7 @@ productsCard = [
     },
     {
         id: 11,
-        category: "Decoration",
+        category: ["Chair", "Decoration"],
         title: "Wooden chair",
         price: "$99.00",
         image: "assets/images/11-300x300.webp",
@@ -106,8 +106,8 @@ function cardProduct(products) {
                     <img src="${product.image}" loading="lazy">
                     <div class="hover__icons">
                         <a href="#3" onclick="openPopupFun(${product.id})"><i class="bi bi-plus-lg"></i></a>
-                        <a href="/carts.html"><i class="bi bi-bag-check"></i></a>
-                        <a href="/wishlist.html"><i class="bi bi-heart"></i></a>
+                        <a href="./carts.html"><i class="bi bi-bag-check"></i></a>
+                        <a href="./wishlist.html"><i class="bi bi-heart"></i></a>
                     </div>
                 </div>
                 <div class="title__image">

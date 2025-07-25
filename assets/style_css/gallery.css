@@ -199,8 +199,62 @@
 }
 @media (max-width: 1024px) {
     .gallery_image {
-    padding: 4em 10px;
+        padding: 5em 2em 2em;
+    }
 
+    .gallery_image h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .item__product .card {
+        min-width: 220px;
+    }
+
+    .title__image h6 a {
+        font-size: 0.95rem;
+        line-height: 2.5;
+    }
+
+    .title__image span {
+        font-size: 16px;
+    }
 }
-    
+
+
+/* ---------------------------------------- */
+/* 📱 موبايل (Phone: ≤ 600px) */
+/* ---------------------------------------- */
+@media (max-width: 600px) {
+    .gallery_image {
+        padding: 12em 1em 0;
+    }
+
+    .gallery_image h1 {
+        font-size: 26px;
+    }
+
+    .item__product .card {
+        min-width: 180px;
+    }
+
+    .title__image h6 a {
+        font-size: 0.9rem;
+        line-height: 2;
+    }
+
+    .title__image span {
+        font-size: 14px;
+    }
+
+    .hover__icons a,
+    .hover__icons button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hover__icons a i,
+    .hover__icons button i {
+        font-size: 16px;
+    }
 }

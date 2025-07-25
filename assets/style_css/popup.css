@@ -17,6 +17,7 @@
 .popup-container {
     display: flex;
     flex-direction: row;
+    position: relative;
     width: 60%;
     height: 400px;
     padding: 1rem;
@@ -80,7 +81,7 @@
     border: 1px solid #ddd;
     border-radius: .4rem;
     /* padding: 0.3rem; */
-    width: 140px;
+    width: 130px;
     height: 40px;
     background-color: #f9f9f9;
 }

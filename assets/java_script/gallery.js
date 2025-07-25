@@ -39,7 +39,7 @@ fetch("./assets/Api/data.json")
                         <button class="add-to-cart" data-name="${item.title}" data-price="${item.price}" data-image="${item.image}">
                             <i class="bi bi-bag-check"></i>
                         </button>
-                      <a href="/wishlist.html"><i class="bi bi-heart"></i></a>
+                      <a href="./wishlist.html"><i class="bi bi-heart"></i></a>
                     </div>
                 </div>
                 <div class="title__image">

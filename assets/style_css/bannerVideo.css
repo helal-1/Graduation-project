@@ -56,3 +56,12 @@
 .video-icon:hover i {
     color: #fff;
 }
+@media (max-width: 1024px) {
+    .banner-video-box {
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    
+    
+}

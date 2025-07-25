@@ -65,6 +65,7 @@ cursor: pointer;
 
 .parent__shop .cardProducts .card {
     width: 280px;
+    height: 200px;
     padding-top: 2em;
 }
 
@@ -173,13 +174,25 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 90%;
+    gap: .5em;
 }
 
-.title__image h6 a {
+.title__image h6  {
     font-size: 1rem;
-    line-height: 3;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
     color: #000;
     transition: 0.5s;
+}
+.title__image h6 a {
+        line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+a{
+    line-height: 0;
 }
 
 .title__image h6 a:hover {
@@ -205,7 +218,65 @@ cursor: pointer;
     cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+/* -------------------- */
+/* 🖥️ الشاشات الكبيرة (Desktop ≥ 1025px) */
+/* -------------------- */
+.parent__shop {
+    width: 100%;
+    padding: 5em 4em 0;
+}
+
+.parent__shop h1 {
+    font-size: 30px;
+}
+
+.parent__shop .cardProducts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+
+.parent__shop .cardProducts .card {
+    width: 100%;
+    height: 445px;
+    padding-top: 2em;
+}
+
+.title__image {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.title__image h6 {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title__image h6 a {
+    display: block;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+
+.title__image span {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* -------------------- */
+/* 📱 الشاشات المتوسطة والصغيرة (Tablet & Mobile ≤ 950px) */
+/* -------------------- */
+@media (max-width: 950px) {
     .parent__shop {
         padding: 3em 1em 0;
     }
@@ -215,32 +286,16 @@ cursor: pointer;
     }
 
     .parent__shop .cardProducts {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1.2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
         width: 100%;
+        padding: 0;
     }
 
-    .parent__shop .links {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-
-.parent__shop .cardProducts {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 1em;
-    padding:  0;
-    width: 100%;
-  }
-    
     .parent__shop .cardProducts .card {
         width: 100%;
+        height: 445px;
     }
 
     .parent__shop .cardProducts .card .image__one {
@@ -249,6 +304,48 @@ cursor: pointer;
 
     .title__image {
         width: 100%;
+        gap: 0.2em;
+    }
+
+    .title__image h6 {
+        font-size: 14px;
+        line-height: 1.1; /* بدل 0 لتفادي مشاكل المسافة */
+        text-align: center;
+    }
+
+    .title__image span {
+        font-size: 14px;
+    }
+
+    .parent__shop .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+/* -------------------- */
+/* 📱 الشاشات الصغيرة جدًا (Mobile < 600px) */
+/* -------------------- */
+@media (max-width: 600px) {
+    .parent__shop .cardProducts {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .parent__shop .cardProducts .card {
+        height: 400px;
+    }
+
+    .title__image h6 {
+        font-size: 13px;
+    }
+
+    .title__image span {
+        font-size: 13px;
     }
 }
 

@@ -1,4 +1,4 @@
-.header {
+.header_home {
   background-color: transparent;
   padding: 30px 2em;
   display: flex;
@@ -7,12 +7,12 @@
   position: fixed; 
   top: 0;
   width: 100%;      
-  transition: padding 2s ease, background-color 20s ease;
+  transition: padding .7s ease, background-color .5s ease;
   z-index: 999;
 }
 
-.header.active_header {
-  background-color: #fff;
+.header_home.active_header {
+  background-color: #ffffff;
   padding: 15px 2em; /* تصغير بدل height */
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -91,6 +91,9 @@
     }
     .bi-list{
         display: block;
+    }
+    .header_home{
+      width: 100%;
     }
 }
  /* header.active_header{

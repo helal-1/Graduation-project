@@ -47,12 +47,11 @@
     bottom: 5%;
     left: 5%;
 }
-
 @media (max-width: 1024px) {
     .Collection {
-        margin-top: 2em;
-        padding: 3em 1em;
-        height: 25vh;
+        height: 30vh;
+        padding: 3em 10px;
+        margin-top: 3em;
     }
 
     .Collection h1 {
@@ -60,11 +59,34 @@
     }
 
     .Collection p {
-        line-height: normal;
+        font-size: 16px;
+        line-height: 1.8;
         padding: 1em 0;
     }
 
-    .flipdown {
+    .Collection .flipdown {
         transform: scale(0.9);
     }
+
+    .Collection .text-btn-normal {
+        font-size: 14px;
+        bottom: 4%;
+        left: 5%;
+    }
+}
+
+
+/* ------------------------------ */
+/* 📱 Mobile ≤ 600px */
+/* ------------------------------ */
+@media (max-width: 600px) {
+    .Collection {
+        height: auto;
+        padding: 2em 0em;
+        height: 80vh;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2em;
+    }
+
 }
