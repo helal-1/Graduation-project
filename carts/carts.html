@@ -19,21 +19,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- icon website -->
-    <link rel="website icon" type="png__icon" href="./assets/images/favicon.ico">
+    <link rel="website icon" type="png__icon" href="../assets/images/favicon.ico">
     <!-- link css -->
-     <link rel="stylesheet" href="./assets/style_css/Wishlist.css">
+    <link rel="stylesheet" href="../assets/style_css/cartsProducts.css">
     <title>Helendo</title>
 </head>
 <body>
-    <header class="header_wishlist">
-        <nav class="nav_wishlist">
+    <header class="header_carts">
+        <nav>
             <div class="footer_inp">
                 <input type="email" placeholder="Search Anything">
                 <i class="bi bi-search"></i>
             </div>
-            <div class="content_nav">
             <div class="logo">
-                <img src="./assets/images/logo.svg" loading="lazy">
+                <img src="../assets/images/logo.svg" loading="lazy">
             </div>
             <div class="inp">
                 <div class="icons__options">
@@ -113,77 +112,72 @@
                     </div>
                 </div>
             </div>
-            </div>
         </nav>
     </header>
     <section class="wishlist">
-        <h1>Wishlist</h1>
-        <div class="link_wishlist">
+        <h1>Wooden chair</h1>
+        <div class="link">
             <a href="../index.html">home</a> /
-            <a class="active" href="#">wishlist</a>
+            <a class="active" href="#">Furniture</a>
         </div>
     </section>
-    <section class="product_wishlist">
-        <div class="title">
-            <h2 style="font-weight: 500;">Product</h2>
-            <h2 style="font-weight: 500;">Unit Price</h2>
-            <h2 style="font-weight: 500;">Stock Status</h2>
+    <section class="carts">
+        <div class="product_image">
+            <div class="small">
+                <img src="../assets/images/single-product-01.webp" onclick="phones(this.src);" alt="image">
+                <img src="../assets/images/single-product-02 (1).webp" onclick="phones(this.src);" alt="image">
+                <img src="../assets/images/single-product-03.webp" onclick="phones(this.src);" alt="image">
+                <img src="../assets/images/single-product-04.webp" onclick="phones(this.src);" alt="image">
+            </div>
+            <div class="bag">
+                <img class="img-bk" src="../assets/images/single-product-01.webp" alt="image">
+            </div>
         </div>
-        <div class="items_product">
-            <div class="card_wishlist">
-                <i class="bi bi-x-lg btn_close" style="cursor: pointer;" id="btn_card"></i>
-                <div class="box_img">
-                    <img src="./assets/images/1_1-300x300.webp" alt="">
-                    <span>Plant pots</span>
+        <div class="title">
+            <div class="title_product">
+                <h2>Teapot with black tea</h2>
+                <h1>Â£59.99 - Â£ 32.00</h1>
+                <p>At vero accusamus et iusto odio dignissimos blanditiis praesentiums <br>dolores molest.</p>
+            </div>
+            <div class="innerHtml">
+                <div class="size">
+                    <h3>Size:</h3>
+    
+                    <div class="selected-sizes">
+                        <span class="M"></span>
+                        <span class="L"></span>
+                        <span class="S"></span>
+                    </div>
                 </div>
-                <div class="price">
-                    <span>$17.00</span>
-                    <span style="color: #76a100;">In Stock</span>
-                </div>
+    
                 <div class="btn">
-                    <a href="#">add to card</a>
+                    <button value="M">M</button>
+                    <button value="L">L</button>
+                    <button value="S">S</button>
+                </div>
+                <div class="size">
+                    <h3>color:</h3>
+    
+                    <div class="selected-color">
+                        <span class="black"></span>
+                        <span class="white"></span>
+    
+                    </div>
+                </div>
+    
+                <div class="btn_color">
+                    <button value="black"><i class="bi bi-check-lg"></i></button>
+                    <button value="white"><i class="bi bi-check-lg"></i></button>
                 </div>
             </div>
-            <div class="card_wishlist"  style="margin-top:2em;">
-                <i class="bi bi-x-lg  btn_close" style="cursor: pointer;" id="btn_card"></i>
-                <div class="box_img">
-                    <img src="./assets/images/1_2-300x300.webp" alt="">
-                    <span>Plant pots</span>
+            <div class="counter_cart">
+                <div class="counter">
+                    <button class="min"><i class="bi bi-dash"></i></button>
+                    <input type="text" class="num" value="0">
+                    <button class="pls"><i class="bi bi-plus"></i></button>
                 </div>
-                <div class="price">
-                    <span>$22.00</span>
-                    <span style="color: #76a100;">In Stock</span>
-                </div>
-                <div class="btn">
-                    <a href="#">add to card</a>
-                </div>
-            </div>
-            <div class="card_wishlist"  style="margin-top:2em;">
-                <i class="bi bi-x-lg  btn_close" style="cursor: pointer;" id="btn_card" onclick="plusSlides(-1)"></i>
-                <div class="box_img">
-                    <img src="./assets/images/1_3-300x300.webp" alt="">
-                    <span>Plant pots</span>
-                </div>
-                <div class="price">
-                    <span>$38.00</span>
-                    <span style="color: #76a100;">In Stock</span>
-                </div>
-                <div class="btn">
-                    <a href="#">add to card</a>
-                </div>
-            </div>
-            <div class="card_wishlist" style="margin-top:2em;">
-                <i class="bi bi-x-lg  btn_close" style="cursor: pointer;"></i>
-                <div class="box_img">
-                    <img src="./assets/images/1_4-300x300.webp" alt="">
-                    <span>Plant pots</span>
-                </div>
-                <div class="price">
-                    <span>$57.00</span>
-                    <span style="color: #76a100;">In Stock</span>
-                </div>
-                <div class="btn">
-                    <a href="#">add to card</a>
+                <div class="btn_cart">
+                    <button><i class="bi bi-bag-check"></i> add to cart</button>
                 </div>
             </div>
         </div>
@@ -206,7 +200,7 @@
             <div class="div_2">
                 <h3>Quick Links</h3>
                 <ul style="list-style: none; padding: 1em 0; display: flex;
-                flex-direction: column; gap: 1em;">
+                    flex-direction: column; gap: 1em;">
                     <li><a href="#" style="color: #000; text-decoration: none;">About Us</a></li>
                     <li><a href="#" style="color: #000; text-decoration: none;">What We Do</a></li>
                     <li><a href="#" style="color: #000; text-decoration: none;">FAQ Page</a></li>
@@ -224,6 +218,6 @@
         </div>
         <span style="line-height: 2;">© 2023 Helendo. All Rights Reserved. by Mohamed Helal</span>
     </footer>
-    <script src="./assets/java_script/wishlist.js"></script>
+    <script src="../assets/java_script/cartsProducts.js"></script>
 </body>
 </html>

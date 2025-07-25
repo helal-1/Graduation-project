@@ -106,8 +106,8 @@ function cardProduct(products) {
                     <img src="${product.image}" loading="lazy">
                     <div class="hover__icons">
                         <a href="#3" onclick="openPopupFun(${product.id})"><i class="bi bi-plus-lg"></i></a>
-                        <a href="./carts.html"><i class="bi bi-bag-check"></i></a>
-                        <a href="./wishlist.html"><i class="bi bi-heart"></i></a>
+                        <a href="../carts/carts.html"><i class="bi bi-bag-check"></i></a>
+                        <a href="../wishlist/wishlist.html"><i class="bi bi-heart"></i></a>
                     </div>
                 </div>
                 <div class="title__image">
