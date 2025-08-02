@@ -7,7 +7,7 @@
         "id": 1,
         "title": "Black vase with green roses",
         "price": 29.00,
-        "image": "/assets/images/1_1-300x300.webp",
+        "image": "assets/images/1_1-300x300.webp",
         "links": {
             "plus": "#2",
             "cart": "./page_carts/carts.html",
@@ -23,7 +23,7 @@
         ],
         "title": "Simple Chair",
         "price": 22.00,
-        "image": "/assets/images/1_2-300x300.webp",
+        "image": "assets/images/1_2-300x300.webp",
         "links": {
             "plus": "#3",
             "cart": "./page_carts/carts.html",
@@ -39,7 +39,7 @@
             ],
         "title": "Smooth disc",
         "price": 33.00,
-        "image": "/assets/images/1_3-300x300.webp",
+        "image": "assets/images/1_3-300x300.webp",
         "links": {
             "plus": "#4",
             "cart": "./page_carts/carts.html",
@@ -55,7 +55,7 @@
         ],
         "title": "Wooden Flowerpot",
         "price":  69.00,
-        "image": "/assets/images/1_4-300x300.webp",
+        "image": "assets/images/1_4-300x300.webp",
         "links": {
             "plus": 20.00,
             "cart": "./page_carts/carts.html",
@@ -70,7 +70,7 @@
             "Decoration"],
         "title": "Living room & Bedroom lights",
         "price": 45.00,
-        "image": "/assets/images/1_5-300x300.webp",
+        "image": "assets/images/1_5-300x300.webp",
         "links": {
             "plus": "#6",
             "cart": "./page_carts/carts.html",
@@ -86,7 +86,7 @@
         ],
         "title": "Gray lamp",
         "price": 77.00,
-        "image": "/assets/images/1_6-300x300.webp",
+        "image": "assets/images/1_6-300x300.webp",
         "links": {
             "plus": "#7",
             "cart": "./page_carts/carts.html",
@@ -102,7 +102,7 @@
         ],
         "title": "Decoration wood",
         "price":  55.00,
-        "image": "/assets/images/1_7-300x300.webp",
+        "image": "assets/images/1_7-300x300.webp",
 
         "links": {
             "plus": "#8",
@@ -121,7 +121,7 @@
         ],
         "title": "Teapot with black tea",
         "price":  66.00,
-        "image": "/assets/images/1_8-300x300.webp",
+        "image": "assets/images/1_8-300x300.webp",
         "links": {
             "plus": "#9",
             "cart": "./page_carts/carts.html",
@@ -139,7 +139,7 @@
         ],
         "title": "Luxury wall clock",
         "price": 70.00,
-        "image": "/assets/images/1_9-300x300.webp",
+        "image": "assets/images/1_9-300x300.webp",
         "links": {
             "plus": "#9",
             "cart": "./page_carts/carts.html",
@@ -156,7 +156,7 @@
         ],
         "title": "Gray nancy chair",
         "price": 40.00,
-        "image": "/assets/images/10-300x300.webp",
+        "image": "assets/images/10-300x300.webp",
         "links": {
             "plus": "#9",
             "cart": "./page_carts/carts.html",
@@ -173,7 +173,7 @@
         ],
         "title": "Wooden chair",
         "price": 99.00,
-        "image": "/assets/images/11-300x300.webp",
+        "image": "assets/images/11-300x300.webp",
         "links": {
             "plus": "#9",
             "cart": "./page_carts/carts.html",

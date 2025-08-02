@@ -24,7 +24,7 @@ setInterval(() => {
 
 // ===========================
 let products = [];
-fetch("/assets/Api/data.json")
+fetch("assets/Api/data.json")
     .then((response) => response.json())
     .then((data) => {
         products = data;
