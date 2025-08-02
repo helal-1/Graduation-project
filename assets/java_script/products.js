@@ -97,7 +97,7 @@ productsCard = [
 
 // const displayProducts = document.getElementById("container_products");
 
-function cardProduct(products) {
+function displayCardProduct(products) {
     let html = ``;
     products.forEach((product) => {
         html += `
@@ -106,8 +106,15 @@ function cardProduct(products) {
                     <img src="${product.image}" loading="lazy">
                     <div class="hover__icons">
                         <a href="#3" onclick="openPopupFun(${product.id})"><i class="bi bi-plus-lg"></i></a>
-                        <a href="/carts/carts.html"><i class="bi bi-bag-check"></i></a>
-                        <a href="/wishlist/wishlist.html"><i class="bi bi-heart"></i></a>
+                <!-- رابط سلة المشتريات -->
+<a href="carts/carts.html" title="سلة المشتريات">
+  <i class="bi bi-bag-check"></i>
+</a>
+
+<!-- رابط قائمة الرغبات -->
+<a href="wishlist/wishlist.html" title="قائمة الرغبات">
+  <i class="bi bi-heart"></i>
+</a>
                     </div>
                 </div>
                 <div class="title__image">
@@ -135,8 +142,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <img src="${product.image}" loading="lazy">
             <div class="hover__icons">
               <a href="#3" onclick="openPopupFun(${product.id})"><i class="bi bi-plus-lg"></i></a>
-              <a href="/carts.html"><i class="bi bi-bag-check"></i></a>
-              <a href="/wishlist.html"><i class="bi bi-heart"></i></a>
+              <a href="carts/carts.html"><i class="bi bi-bag-check"></i></a>
+              <a href="wishlist/wishlist.html"><i class="bi bi-heart"></i></a>
             </div>
           </div>
           <div class="title__image">
