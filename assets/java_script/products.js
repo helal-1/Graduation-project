@@ -3,7 +3,7 @@ productsCard = [
     {
         category: ["Accessories", "Decoration"],
         id: 1,
-        image: "/assets/images/1_1-300x300.webp",
+        image: "assets/images/1_1-300x300.webp",
         title: "Black vase with green roses",
         rate: 4,
         price: "$29.00",
@@ -11,7 +11,7 @@ productsCard = [
     {
         category: ["Chair", "Decoration"],
         id: 2,
-        image: "/assets/images/1_2-300x300.webp",
+        image: "assets/images/1_2-300x300.webp",
         title: "Simple Chair",
         rate: 4,
         price: "$22.00",
@@ -19,7 +19,7 @@ productsCard = [
     {
         category: ["Furniture", "Decoration"],
         id: 3,
-        image: "/assets/images/1_3-300x300.webp",
+        image: "assets/images/1_3-300x300.webp",
         title: "Smooth Disk",
         rate: 5,
         price: "$33.00",
@@ -27,7 +27,7 @@ productsCard = [
     {
         category: "Accessories",
         id: 4,
-        image: "/assets/images/1_4-300x300.webp",
+        image: "assets/images/1_4-300x300.webp",
         title: "Wooden Flowerpot",
         rate: 2,
         price: "$66.00",
@@ -37,7 +37,7 @@ productsCard = [
         category: "Decoration",
         title: "Living room & Bedroom lights",
         price: "$54.00",
-        image: "/assets/images/1_5-300x300.webp",
+        image: "assets/images/1_5-300x300.webp",
         links: {
             plus: "#6",
             cart: "./page_carts/carts.html",
@@ -50,7 +50,7 @@ productsCard = [
         category: "Decoration",
         title: "Gray lamp",
         price: "$77.00",
-        image: "/assets/images/1_6-300x300.webp",
+        image: "assets/images/1_6-300x300.webp",
         rate: 5,
     },
     {
@@ -58,7 +58,7 @@ productsCard = [
         category: [ "Decoration", "Table"],
         title: "Decoration wood",
         price: "$55.00",
-        image: "/assets/images/1_7-300x300.webp",
+        image: "assets/images/1_7-300x300.webp",
         rate: 5,
     },
     {
@@ -66,7 +66,7 @@ productsCard = [
         category: ["Decoration", "Furniture", "Table"],
         title: "Teapot with black tea",
         price: "$66.00",
-        image: "/assets/images/1_8-300x300.webp",
+        image: "assets/images/1_8-300x300.webp",
         rate: 5,
     },
     {
@@ -74,7 +74,7 @@ productsCard = [
         category: ["Accessories", "Decoration", "Furniture"],
         title: "Luxury wall clock",
         price: "$70.00",
-        image: "/assets/images/1_9-300x300.webp",
+        image: "assets/images/1_9-300x300.webp",
         rate: 5,
     },
     {
@@ -82,7 +82,7 @@ productsCard = [
         category: ["Chair", "Decoration"],
         title: "Gray nancy chair",
         price: "$40.00",
-        image: "/assets/images/10-300x300.webp",
+        image: "assets/images/10-300x300.webp",
         rate: 5,
     },
     {
@@ -90,7 +90,7 @@ productsCard = [
         category: ["Chair", "Decoration"],
         title: "Wooden chair",
         price: "$99.00",
-        image: "/assets/images/11-300x300.webp",
+        image: "assets/images/11-300x300.webp",
         rate: 5,
     },
 ];
