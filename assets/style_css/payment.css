@@ -262,6 +262,9 @@ input[type="text"], input[type="number"] {
         padding: 1.5rem;
         width: 100%;
     }
+    .method input[type="radio"]{
+        transform: scale(3.5);
+    }
     h2 {
         font-size: 1.2rem;
     }
@@ -322,6 +325,7 @@ height: 100%;
 #total-payment {
     text-align: right;
     font-weight: bold;
+    margin-top: 1em;
 }
 .payment {
     padding: 10em 4em 5em;
