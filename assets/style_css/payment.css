@@ -209,7 +209,7 @@ h2 {
     cursor: pointer;
 }
 .method input[type="radio"] {
-    transform: scale(4.2);
+    transform: scale(1.2);
     accent-color: #2e7d32;
 }
 .method label {
