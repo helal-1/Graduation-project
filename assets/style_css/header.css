@@ -2,6 +2,7 @@
   background-color: transparent;
   padding: 30px 2em;
   display: flex;
+  height: 80px;
   justify-content: space-between;
   align-items: center;
   position: fixed; 

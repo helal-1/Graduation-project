@@ -90,7 +90,8 @@ cartItemsContainer.addEventListener("click", function (e) {
 });
 
 function addToCart(productName, price, image, quantity = 1) {
-    cart.push({ name: productName, price: price, image: image, quantity: quantity });
+     let fixedImage = image.startsWith("/") ? image : image.replace("./", "/");
+   cart.push({ name: productName, price: price, image: fixedImage, quantity: quantity });
     updateCartUI();
 }
 
@@ -136,9 +137,7 @@ function updateCartUI() {
 const checkoutBtn = document.getElementById("checkout");
 checkoutBtn.addEventListener("click", () => {
     localStorage.setItem("cart", JSON.stringify(cart));
-    window.location.href = "payment/payment.html";
-    console.log("aa");
-    
+    window.location.href = "/payment/payment.html";
 });
 
 // ===========================
@@ -181,7 +180,7 @@ function openPopupFun(productId) {
                     <button class="pls">+</button>
                 </div>
                 <div class="btn_cart">
-                    <button><i class="bi bi-bag-check"></i> Add to Cart</button>
+                    <button><i class="bi bi-bag-check"></i> Add to cart</button>
                 </div>
             </div>
         </div>

@@ -58,39 +58,39 @@
 
 <nav class="nav-links">
     <div class="dropdown">
-        <a href="#" class="link_home">Home</a>
-        <ul class="dropdown-menu">
+        <a href="#home" class="link_home">Home</a>
+        <!-- <ul class="dropdown-menu">
             <li><a href="#">Home 1</a></li>
             <li><a href="#">Home 2</a></li>
             <li><a href="#">Home 3</a></li>
-        </ul>
+        </ul> -->
     </div>
 
     <div class="dropdown">
-        <a href="#">Shop</a>
-        <ul class="dropdown-menu">
+        <a href="#shop">Shop</a>
+        <!-- <ul class="dropdown-menu">
             <li><a href="#">Shop Men</a></li>
             <li><a href="#">Shop Women</a></li>
             <li><a href="#">Shop Accessories</a></li>
-        </ul>
+        </ul> -->
     </div>
 
     <div class="dropdown">
-        <a href="#">Products</a>
-        <ul class="dropdown-menu">
+        <a href="#gallery_products">Products</a>
+        <!-- <ul class="dropdown-menu">
             <li><a href="#">New Arrivals</a></li>
             <li><a href="#">Best Sellers</a></li>
             <li><a href="#">Special Offers</a></li>
-        </ul>
+        </ul> -->
     </div>
 
     <div class="dropdown">
-        <a href="#">Blog</a>
-        <ul class="dropdown-menu">
+        <a href="#footer">Blog</a>
+        <!-- <ul class="dropdown-menu">
             <li><a href="#">Latest Posts</a></li>
             <li><a href="#">Guides</a></li>
             <li><a href="#">Trends</a></li>
-        </ul>
+        </ul> -->
     </div>
 </nav>
 
@@ -127,7 +127,7 @@
 </header>
 
 
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" id="home">
         <div class="swiper-wrapper">
             <div class="swiper-slide" id="bk-img1">
                 <div class="title__page activeOne">
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    <section class="gallery_image">
+    <section class="gallery_image" id="gallery_products">
                 <h1>New products</h1>
         <div class="popup">
             <div class="popup-container">
@@ -220,13 +220,13 @@
     <div class="bk_color"></div>
     <img src="./assets/images/video-banner2.webp" alt="Video Banner">
     <div class="video-icon">
-        <a href="https://www.youtube.com/watch?v=fkoEj95puX0" class="popup-youtube">
+        <a href="./assets/videos/3770033-hd_1920_1080_25fps.mp4" class="popup-youtube">
             <i class="bi bi-play-fill"></i> <!-- يمكنك استخدام fa-play بدلاً منها -->
         </a>
     </div>
 </div>
 
-<section class="parent__shop">
+<section class="parent__shop" id="shop">
     <h1>Best selling</h1>
     <div class="container">
         <div class="links" id="category" data-aos="fade-up" data-aos-duration="1000">
@@ -284,7 +284,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="footer">
             <div
                 style="display: flex; justify-content: space-between; flex-wrap: wrap; max-width: 1200px; margin: auto; gap: 20px;">
         
