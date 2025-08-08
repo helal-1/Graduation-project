@@ -137,7 +137,7 @@ function updateCartUI() {
 const checkoutBtn = document.getElementById("checkout");
 checkoutBtn.addEventListener("click", () => {
     localStorage.setItem("cart", JSON.stringify(cart));
-    window.location.href = "/payment/payment.html";
+    window.location.href = "payment/payment.html";
 });
 
 // ===========================
