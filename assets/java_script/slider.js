@@ -2,7 +2,7 @@ const dots = document.querySelectorAll(".swiper-pagination-bullet");
 
 const swiper = new Swiper(".mySwiper", {
     direction: "vertical",
-    // mousewheel: true,
+    mousewheel: false,
     speed: 600,
     pagination: {
         el: ".swiper-pagination",

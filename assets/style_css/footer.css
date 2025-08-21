@@ -27,15 +27,61 @@ footer .div_2 {
     flex: 1;
     min-width: 200px;
 }
+footer .div_2 ul li #Afooter:hover {
+    color: #d4b446;
+}
+#Afooter{
+    color: #000; 
+    transition: color 0.5s;
+    text-decoration: none;
+}
 
 footer .footer_inp {
     flex: 1;
     max-width: 330px;
     border-bottom: 1px solid #ccc;
     height: 90px;
+
+}
+.sidebar_footer_right {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;                                                            
 }
 
 @media (max-width: 767px) {
     footer {
         padding: 40px 1em;
     }
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .social-links a {
+    font-size: 22px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    text-decoration: none;
+  }
+
+  /* ألوان الاستايل */
+  .facebook { background: #1877f2; }
+  .whatsapp { background: #25D366; }
+  .gmail    { background: #ea4335; }
+  .x        { background: #000000; }
+
+  /* Hover effect */
+  .social-links a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
